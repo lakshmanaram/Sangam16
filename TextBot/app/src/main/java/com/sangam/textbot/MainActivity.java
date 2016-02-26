@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.ParcelUuid;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -53,18 +54,61 @@ public class MainActivity extends Activity {
             ConnectThread mConnectThread = new ConnectThread(mDevice);
             mConnectThread.start();
             Button button = (Button) findViewById(R.id.click);
+            Button button1= (Button)findViewById(R.id.click1);
+            Button button2= (Button)findViewById(R.id.click3);
+            Button button3= (Button)findViewById(R.id.click4);
+            Button button4= (Button)findViewById(R.id.click5);
+            Button button5= (Button)findViewById(R.id.click5);
 
-            ConnectedThread mConnectedThread = new ConnectedThread();
-            mConnectedThread.start();
 
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    sendDataToPairedDevice("r", mDevice);
+                    sendDataToPairedDevice("1", mDevice);
 
                 }
+
+
             });
+    button1.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+
+            sendDataToPairedDevice("2", mDevice);
         }
+    });
+
+            button2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sendDataToPairedDevice("3", mDevice);
+                }
+            });
+
+            button3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sendDataToPairedDevice("3", mDevice);
+                }
+            });
+            button4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sendDataToPairedDevice("3", mDevice);
+                }
+            });
+            button5.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    sendDataToPairedDevice("3", mDevice);
+                }
+            });
+
+
+        }
+
+
     }
 
     private void sendDataToPairedDevice(String message, BluetoothDevice device) {
@@ -124,9 +168,12 @@ public class MainActivity extends Activity {
             try {
                 mmInStream = mmSocket.getInputStream();
                 mmOutStream = mmSocket.getOutputStream();
+                Log.i("hey","mmoutsocket there");
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            ConnectedThread mConnectedThread = new ConnectedThread();
+            mConnectedThread.start();
 
         }
 
