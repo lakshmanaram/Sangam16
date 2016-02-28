@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+     android:background="@drawable/back1"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
 
@@ -16,18 +17,18 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Book1"
+        android:text="Engineering Graphics"
         android:id="@+id/click"
-        android:background="#224455"/>
+        android:background="#0CD219"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="30sp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Book2"
+        android:text="Transmission and Distribution"
         android:id="@+id/click1"
-        android:background="#224455"/>
+        android:background="#0CD219"/>
 
         <View
             android:layout_width="match_parent"
@@ -35,9 +36,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Book3"
+            android:text="SN Sanyal Reactions"
             android:id="@+id/click3"
-            android:background="#224455"/>
+            android:background="#0CD219"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="30sp"/>
@@ -46,7 +47,7 @@
             android:layout_height="wrap_content"
             android:text="Book4"
             android:id="@+id/click4"
-            android:background="#224455"/>
+            android:background="#0CD219"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="30sp"/>
@@ -56,7 +57,7 @@
             android:layout_height="wrap_content"
             android:text="Book5"
             android:id="@+id/click5"
-            android:background="#224455"/>
+            android:background="#0CD219"/>
         <View
             android:layout_width="match_parent"
             android:layout_height="30sp"/>
@@ -65,7 +66,7 @@
             android:layout_height="wrap_content"
             android:text="Book6"
             android:id="@+id/click6"
-            android:background="#224455"/>
+            android:background="#0CD219"/>
     </LinearLayout>
 
 </RelativeLayout>

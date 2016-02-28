@@ -89,19 +89,19 @@ public class MainActivity extends Activity {
             button3.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    sendDataToPairedDevice("3", mDevice);
+                    sendDataToPairedDevice("4", mDevice);
                 }
             });
             button4.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    sendDataToPairedDevice("3", mDevice);
+                    sendDataToPairedDevice("5", mDevice);
                 }
             });
             button5.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    sendDataToPairedDevice("3", mDevice);
+                    sendDataToPairedDevice("6", mDevice);
                 }
             });
 
